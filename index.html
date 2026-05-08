@@ -1,0 +1,193 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD231 | Course Home</title>
+
+    <meta name="description"
+        content="WDD231 Course Home Page showcasing responsive web design, JavaScript course filtering, dynamic content rendering, accessibility standards, and frontend web development skills by Tobiloba Oluwasegun.">
+
+    <meta name="author" content="Tobiloba Oluwasegun">
+
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="stylesheet" href="styles/small.css">
+
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JS -->
+
+    <script src="scripts/navigation.js" defer></script>
+
+    <script src="scripts/date.js" defer></script>
+
+    <script src="scripts/course.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        
+         <div class="logo-container">
+    
+        <img src="images/logo.webp" alt="TheTobsDev Logo" width="60" height="60">
+    
+        <span>TheTobsDev</span>
+    
+        </div>
+
+        <button id="menu" aria-label="Open Navigation Menu"></button>
+
+        <nav aria-label="Primary Navigation">
+
+            <a href="index.html" class="active">
+                Home
+            </a>
+
+            <a href="#">
+                Chamber
+            </a>
+
+            <a href="#">
+                Final
+            </a>
+
+        </nav>
+
+    </header>
+
+    <main id="main-content">
+
+        <h1>Home</h1>
+
+        <p class="intro">
+            Welcome to my WDD231 Course Home Page. This website demonstrates
+            responsive web design, accessibility, semantic HTML, CSS layouts,
+            JavaScript functionality, and modern frontend development practices.
+            The project showcases dynamic course filtering, responsive navigation,
+            optimized images, and interactive user interface elements.
+        </p>
+
+        <section class="card">
+
+            <h2>About Me</h2>
+
+            <p>
+                My name is Tobiloba Oluwasegun and I am passionate about web
+                development, software engineering, responsive design, and digital
+                technology. I enjoy learning how websites and applications are
+                created using HTML, CSS, and JavaScript.
+            </p>
+
+            <p>
+                I am currently improving my frontend development skills by studying
+                semantic HTML structure, CSS Grid and Flexbox layouts, accessibility,
+                JavaScript DOM manipulation, performance optimization, and responsive
+                user interface design.
+            </p>
+
+            <p>
+                My goal is to become a professional full-stack developer capable
+                of building responsive, user-friendly, and accessible websites
+                and applications for real-world use cases.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>Certificate Courses</h2>
+
+            <div class="buttons">
+
+                <button id="all">
+                    All Courses
+                </button>
+
+                <button id="wdd">
+                    WDD Courses
+                </button>
+
+                <button id="cse">
+                    CSE Courses
+                </button>
+
+            </div>
+
+            <div id="courses"></div>
+
+            <p class="credits">
+                Total Credits:
+                <span id="credits"></span>
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>Student Photo</h2>
+
+            <img src="images/profile.webp" alt="Portrait of Tobiloba Oluwasegun" class="student-photo" width="300"
+                height="400">
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="social-links">
+
+            <a href="https://github.com/thetobsdev" target="_blank" rel="noopener">
+                GitHub
+            </a>
+
+            <a href="https://linkedin.com/in/thetobsdev" target="_blank" rel="noopener">
+                LinkedIn
+            </a>
+
+            <a href="https://x.com/" target="_blank" rel="noopener">
+                X
+            </a>
+
+        </div>
+
+        <p>
+            ©
+            <span id="year"></span>
+
+            | Tobiloba Oluwasegun
+
+            | Lagos, Nigeria
+
+            | WDD231 Course Home Page
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>
