@@ -1,0 +1,28 @@
+{
+    "familyName": "Oluwasegun",
+    "moveInDate": "2024-01-15",
+    "numberOfMembers": 4,
+    "visitedByBishopric": true,
+    "members": [
+        {
+            "name": "Tobiloba Oluwasegun",
+            "gender": "Male",
+            "birthdate": "2005-06-10"
+        },
+        {
+            "name": "Mrs Oluwasegun",
+            "gender": "Female",
+            "birthdate": "1980-03-22"
+        },
+        {
+            "name": "Child One",
+            "gender": "Male",
+            "birthdate": "2010-08-14"
+        },
+        {
+            "name": "Child Two",
+            "gender": "Female",
+            "birthdate": "2015-11-30"
+        }
+    ]
+}

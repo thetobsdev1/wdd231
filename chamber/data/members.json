@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Lagos Tech Hub",
+        "address": "Victoria Island, Lagos",
+        "phone": "+2348012345678",
+        "website": "https://www.nigeriantechhubs.com/states/lagos/",
+        "image": "tech.jpg",
+        "membership": 3
+    },
+    {
+        "name": "Naija Foods Ltd",
+        "address": "Ikeja, Lagos",
+        "phone": "+2348098765432",
+        "website": "https://naijafoods.com",
+        "image": "food.jpg",
+        "membership": 2
+    },
+    {
+        "name": "BuildIt Construction",
+        "address": "Surulere, Lagos",
+        "phone": "+2348123456789",
+        "website": "https://builditng.com",
+        "image": "build.jpg",
+        "membership": 1
+    },
+    {
+        "name": "Swift Logistics",
+        "address": "Apapa, Lagos",
+        "phone": "+2348055555555",
+        "website": "https://swiftlogistics.com",
+        "image": "logistics.jpg",
+        "membership": 2
+    },
+    {
+        "name": "Green Agro Farms",
+        "address": "Epe, Lagos",
+        "phone": "+2348066666666",
+        "website": "https://greenagro.com",
+        "image": "farm.jpg",
+        "membership": 3
+    },
+    {
+        "name": "Urban Fashion House",
+        "address": "Lekki, Lagos",
+        "phone": "+2348077777777",
+        "website": "https://urbanfashion.com",
+        "image": "fashion.jpg",
+        "membership": 3
+    },
+    {
+        "name": "Bright Media Agency",
+        "address": "Yaba, Lagos",
+        "phone": "+2348088888888",
+        "website": "https://brightmedia.com",
+        "image": "media.jpg",
+        "membership": 1
+    }
+]
