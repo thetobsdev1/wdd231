@@ -6,114 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Lagos Chamber Directory</title>
+
     <meta name="description"
-        content="Explore trusted businesses and members of the Lagos Chamber of Commerce. Connect, grow, and discover opportunities.">
+        content="Discover verified businesses and members of the Lagos Chamber of Commerce. Connect, grow, and explore opportunities in Lagos.">
     <meta name="author" content="Tobiloba Oluwasegun">
 
-    <!-- Favicon -->
+    <!-- FAVICON -->
     <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- GOOGLE FONTS (AUDIT FIX) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Lagos Chamber Directory">
-    <meta property="og:description" content="Explore trusted businesses in Lagos">
+    <!-- OPEN GRAPH (FIXED) -->
+    <meta property="og:title" content="Lagos Chamber Business Directory and Member Network">
+    <meta property="og:description"
+        content="Explore trusted Lagos businesses, connect with professionals, and discover opportunities through the official Chamber directory.">
     <meta property="og:image" content="https://thetobsdev1.github.io/wdd231/chamber/images/preview.jpg">
     <meta property="og:url" content="https://thetobsdev1.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Lagos Chamber of Commerce">
+
+    <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1>Lagos Chamber of Commerce</h1>
+    <canvas id="bg"></canvas>
 
-        <!-- MENU -->
-        <button id="menuBtn" aria-label="Toggle Navigation">☰</button>
+    <header class="header">
+        <h1>Lagos Chamber</h1>
 
-        <nav id="navMenu">
+        <nav>
             <a href="index.html">Home</a>
-            <a href="directory.html">Directory</a>
+            <a class="active" href="directory.html">Directory</a>
             <a href="join.html">Join</a>
         </nav>
 
-        <!-- CONTROLS -->
-        <div class="controls">
-            <label for="search" class="visually-hidden">Search Businesses</label>
-            <input type="text" id="search" placeholder="Search businesses...">
+        <div class="toolbar">
+            <input id="search" type="text" placeholder="Search businesses...">
             <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
         </div>
 
-        <!-- FILTERS -->
-        <div class="filters">
-            <button data-filter="all">All</button>
-            <button data-filter="3">Gold</button>
-            <button data-filter="2">Silver</button>
-            <button data-filter="1">Member</button>
+        <!-- STATS -->
+        <div class="stats">
+            <span>All: <b id="allCount">0</b></span>
+            <span>Gold: <b id="goldCount">0</b></span>
+            <span>Silver: <b id="silverCount">0</b></span>
+            <span>Member: <b id="memberCount">0</b></span>
+        </div>
+
+        <!-- FILTER -->
+        <div class="chips">
+            <button data-filter="all" class="chip active">All</button>
+            <button data-filter="3" class="chip">Gold</button>
+            <button data-filter="2" class="chip">Silver</button>
+            <button data-filter="1" class="chip">Member</button>
         </div>
 
         <!-- VIEW -->
-        <div class="view-buttons">
+        <div class="view">
             <button id="gridBtn">Grid</button>
             <button id="listBtn">List</button>
         </div>
     </header>
 
-    <!-- MAIN -->
     <main>
 
-        <!-- INTRO -->
+        <!-- 🔥 FIXED: H1 MUST BE INSIDE MAIN -->
+        <h1>Business Directory</h1>
+
         <section class="intro">
-            <h2>Business Directory</h2>
+            <h2>Explore Lagos Businesses</h2>
             <p>
-                Welcome to the Lagos Chamber of Commerce Directory. Discover verified businesses,
-                connect with trusted partners, and explore opportunities within Lagos' thriving economy.
+                Discover verified businesses, connect with trusted partners, and explore opportunities
+                within Lagos' thriving economy through the Chamber of Commerce directory.
             </p>
         </section>
 
-        <div id="loader" class="loader"></div>
-
-        <!-- CARDS -->
-        <div id="cards" class="grid"></div>
-
-        <!-- INFO SECTION -->
-        <section class="info">
-            <h2>Why Join the Chamber?</h2>
-            <ul>
-                <li>✔ Network with top business leaders</li>
-                <li>✔ Promote your business visibility</li>
-                <li>✔ Access exclusive events and training</li>
-                <li>✔ Grow your brand within Lagos</li>
-            </ul>
-        </section>
-
-        <!-- MAP -->
-        <section class="map">
-            <h2>Our Location</h2>
-            <iframe src="https://www.google.com/maps?q=Lagos&output=embed" title="Map of Lagos" loading="lazy">
-            </iframe>
-        </section>
+        <section id="cards" class="grid"></section>
 
     </main>
 
-    <!-- FOOTER -->
     <footer>
-        <div class="footer-content">
-            <p><strong>📍 Lagos Chamber of Commerce</strong></p>
-            <p>📧 info@lagoschamber.org | 📞 +234 800 000 0000</p>
-            <p>👤 Tobiloba Oluwasegun | WDD 231</p>
-            <p id="year"></p>
-            <p id="lastModified"></p>
-        </div>
+        <p><strong>Lagos Chamber of Commerce</strong></p>
+        <p>📧 info@lagoschamber.org | 📞 +234 800 000 0000</p>
+        <p>👤 Tobiloba Oluwasegun | WDD 231</p>
+        <p>&copy; <span id="year"></span></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
-
-    <!-- SCRIPT -->
-    <script src="js/directory.js" defer></script>
 
 </body>
 
