@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lagos Chamber Home</title>
+
+    <meta name="description"
+        content="Join Lagos Chamber of Commerce to grow your business, connect with leaders, and explore new opportunities in Lagos.">
+    <meta name="author" content="Tobiloba Oluwasegun">
+
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- SEO / SOCIAL -->
+    <meta property="og:title" content="Lagos Chamber of Commerce Home Page">
+    <meta property="og:description"
+        content="Discover business opportunities, events, and partnerships with the Lagos Chamber of Commerce.">
+    <meta property="og:image" content="https://thetobsdev1.github.io/wdd231/chamber/images/lagos-hero.jpg">
+    <meta property="og:url" content="https://thetobsdev1.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header glass">
+        <h1>LC</h1>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <img src="images/lagoshero.png" alt="Lagos skyline view">
+
+            <div class="overlay"></div>
+
+            <div class="hero-content">
+                <h1>Empowering Business Growth in Lagos</h1>
+                <p>Connect with leaders. Grow your brand. Expand your reach.</p>
+                <a href="join.html" class="cta">Join the Chamber</a>
+            </div>
+        </section>
+
+        <!-- MAIN GRID -->
+        <section class="home-grid">
+
+            <!-- EVENTS -->
+            <section class="card glass">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li>📅 Business Networking Meetup – June 5</li>
+                    <li>📅 Startup Pitch Day – June 12</li>
+                    <li>📅 Lagos Trade Expo – June 20</li>
+                </ul>
+            </section>
+
+            <section class="card glass weather">
+                <h2>🌤 Lagos Weather</h2>
+                <p id="temp">Loading...</p>
+                <p id="desc"></p>
+                <div id="forecast"></div>
+            </section>
+
+        </section>
+
+        <!-- SPOTLIGHT -->
+        <section class="spotlight">
+            <h2>Featured Members</h2>
+            <div id="spotlightCards" class="spotlight-grid"></div>
+        </section>
+
+    </main>
+
+    <footer class="glass">
+        <p>📍 Lagos Chamber of Commerce</p>
+        <p>👤 Tobiloba Oluwasegun | WDD 231</p>
+        <p>&copy; <span id="year"></span></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
