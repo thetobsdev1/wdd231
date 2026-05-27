@@ -66,9 +66,30 @@ a {
     padding: 0.9rem 1rem;
 }
 
-.header h1 {
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    text-decoration: none;
+    color: #fff;
+    min-width: 0;
+}
+
+.brand-logo {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+.brand-name {
     font-size: 1.15rem;
-    margin: 0;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 nav {
@@ -166,13 +187,21 @@ footer p {
         padding: 1.1rem 1.4rem;
     }
 
-    .header h1 {
+    .brand-name {
         font-size: 1.35rem;
     }
 
     nav {
         justify-content: flex-end;
         gap: 0.75rem;
+    }
+
+    /* Header sub-sections (directory page) */
+    .header > .toolbar,
+    .header > .stats,
+    .header > .chips,
+    .header > .view {
+        grid-column: 1 / -1;
     }
 }
 
