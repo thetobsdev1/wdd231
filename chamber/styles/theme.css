@@ -1,0 +1,178 @@
+/* Professional shared theme for all Chamber pages */
+
+:root {
+    color-scheme: dark;
+    --bg0: #070B14;
+    --bg1: #0B1530;
+    --surface: rgba(255, 255, 255, 0.06);
+    --surface2: rgba(255, 255, 255, 0.09);
+    --border: rgba(255, 255, 255, 0.14);
+    --text: rgba(255, 255, 255, 0.92);
+    --muted: rgba(255, 255, 255, 0.72);
+    --accent: #4ea1ff;
+    --accent2: #F4A300;
+    --shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+    --radius: 14px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background:
+        radial-gradient(1200px 600px at 15% 10%, rgba(78, 161, 255, 0.18), transparent 55%),
+        radial-gradient(900px 500px at 85% 0%, rgba(244, 163, 0, 0.16), transparent 55%),
+        linear-gradient(180deg, var(--bg1), var(--bg0) 60%);
+    color: var(--text);
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1,
+h2,
+h3 {
+    letter-spacing: -0.02em;
+}
+
+p {
+    color: var(--muted);
+    line-height: 1.55;
+}
+
+a {
+    color: inherit;
+}
+
+.glass {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(14px);
+}
+
+/* Header / Nav */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    margin: 0;
+    padding: 0.9rem 1rem;
+}
+
+.header h1 {
+    font-size: 1.15rem;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+nav a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.45rem 0.7rem;
+    border-radius: 999px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.88);
+    border: 1px solid transparent;
+    transition: background 140ms ease, border-color 140ms ease, transform 140ms ease;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+nav a.active,
+nav a[aria-current="page"] {
+    background: rgba(78, 161, 255, 0.16);
+    border-color: rgba(78, 161, 255, 0.35);
+    color: #fff;
+}
+
+/* Buttons / inputs */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+input,
+select,
+textarea {
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(0, 0, 0, 0.28);
+    color: #fff;
+}
+
+button {
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+:focus-visible {
+    outline: 3px solid rgba(78, 161, 255, 0.55);
+    outline-offset: 2px;
+}
+
+/* Cards (directory + general) */
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.card:hover {
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.55);
+}
+
+/* Footer */
+footer {
+    max-width: 1100px;
+    margin: 1.5rem auto 2rem;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+/* Responsive header layout */
+@media (min-width: 800px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 1.1rem 1.4rem;
+    }
+
+    .header h1 {
+        font-size: 1.35rem;
+    }
+
+    nav {
+        justify-content: flex-end;
+        gap: 0.75rem;
+    }
+}
+

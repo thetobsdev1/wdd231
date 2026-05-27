@@ -80,17 +80,9 @@ function spotlight() {
         });
 }
 
-const icon = data.weather[0].icon;
-
-document.getElementById("desc").innerHTML = `
-    <img src="https://openweathermap.org/img/wn/${icon}@2x.png">
-    ${capitalize(data.weather[0].description)}
-`;
-
 /* FOOTER */
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
 /* INIT */
-getWeather();
 spotlight();

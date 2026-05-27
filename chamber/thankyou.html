@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thank You | Lagos Chamber</title>
+
+    <meta name="description" content="Thank you for applying to join the Lagos Chamber of Commerce.">
+    <meta name="author" content="Tobiloba Oluwasegun">
+
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header class="header glass">
+        <h1>Lagos Chamber</h1>
+
+        <nav aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <h1>Thank You</h1>
+
+        <section class="thankyou glass" aria-labelledby="thanksHeading">
+            <h2 id="thanksHeading">We appreciate your application.</h2>
+            <p>We’ll review your submission and reach out soon.</p>
+
+            <div class="submitted" aria-live="polite">
+                <h3>Submitted Information</h3>
+                <dl class="submitted-grid">
+                    <div>
+                        <dt>First Name</dt>
+                        <dd id="outFirst">—</dd>
+                    </div>
+                    <div>
+                        <dt>Last Name</dt>
+                        <dd id="outLast">—</dd>
+                    </div>
+                    <div>
+                        <dt>Email</dt>
+                        <dd id="outEmail">—</dd>
+                    </div>
+                    <div>
+                        <dt>Mobile Phone</dt>
+                        <dd id="outPhone">—</dd>
+                    </div>
+                    <div>
+                        <dt>Business / Organization</dt>
+                        <dd id="outBusiness">—</dd>
+                    </div>
+                    <div>
+                        <dt>Submitted On</dt>
+                        <dd id="outTimestamp">—</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <a class="back-link" href="join.html">Back to Join Page</a>
+        </section>
+    </main>
+
+    <footer class="glass">
+        <p>📍 Lagos Chamber of Commerce</p>
+        <p>👤 Tobiloba Oluwasegun | WDD 231</p>
+        <p>&copy; <span id="year"></span></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
+

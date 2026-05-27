@@ -1,0 +1,174 @@
+/* Join + Thank You page styles (kept separate from shared CSS) */
+
+.join-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.join-layout {
+    display: grid;
+    gap: 1rem;
+}
+
+.join-form h2,
+.membership-cards h2 {
+    margin-top: 0;
+}
+
+.application-form {
+    display: grid;
+    gap: 0.9rem;
+}
+
+.application-form label {
+    display: grid;
+    gap: 0.35rem;
+    font-weight: 600;
+}
+
+.application-form input,
+.application-form select,
+.application-form textarea {
+    font: inherit;
+    padding: 0.7rem 0.8rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(0, 0, 0, 0.25);
+    color: #fff;
+}
+
+.application-form textarea {
+    resize: vertical;
+}
+
+.application-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.application-form input[type="submit"] {
+    cursor: pointer;
+    background: #F4A300;
+    border: none;
+    color: #111;
+    font-weight: 700;
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.application-form input[type="submit"]:hover {
+    filter: brightness(1.05);
+}
+
+.application-form input[type="submit"]:active {
+    transform: translateY(1px);
+}
+
+.membership-cards {
+    display: grid;
+    gap: 1rem;
+    align-content: start;
+}
+
+.level-card {
+    opacity: 0;
+    transform: translateY(14px);
+    animation: levelIn 650ms ease forwards;
+}
+
+.level-card:nth-child(2) {
+    animation-delay: 80ms;
+}
+
+.level-card:nth-child(3) {
+    animation-delay: 160ms;
+}
+
+.level-card:nth-child(4) {
+    animation-delay: 240ms;
+}
+
+.level-card:nth-child(5) {
+    animation-delay: 320ms;
+}
+
+@keyframes levelIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.level-more {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #4ea1ff;
+    text-decoration: underline;
+}
+
+.membership-modal {
+    border: none;
+    border-radius: 14px;
+    padding: 0;
+    max-width: 560px;
+    width: calc(100% - 2rem);
+    background: rgba(10, 20, 40, 0.98);
+    color: #fff;
+}
+
+.membership-modal::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-inner {
+    padding: 1.2rem 1.2rem 1rem;
+}
+
+.modal-close {
+    margin-top: 1rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    cursor: pointer;
+}
+
+.thankyou .back-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #4ea1ff;
+}
+
+.submitted-grid {
+    display: grid;
+    gap: 0.75rem;
+    margin: 0;
+}
+
+.submitted-grid > div {
+    display: grid;
+    gap: 0.15rem;
+}
+
+.submitted-grid dt {
+    font-weight: 700;
+    opacity: 0.9;
+}
+
+.submitted-grid dd {
+    margin: 0;
+    opacity: 0.95;
+}
+
+@media (min-width: 900px) {
+    .join-layout {
+        grid-template-columns: 1.2fr 0.8fr;
+        align-items: start;
+    }
+
+    .submitted-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem 1.5rem;
+    }
+}
+

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join Lagos Chamber</title>
+
+    <meta name="description"
+        content="Apply to join the Lagos Chamber of Commerce. Choose a membership level and submit your application online.">
+    <meta name="author" content="Tobiloba Oluwasegun">
+
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header class="header glass">
+        <h1>Lagos Chamber</h1>
+
+        <nav aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a class="active" href="join.html" aria-current="page">Join</a>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <h1>Membership Application</h1>
+
+        <div class="join-layout">
+            <section class="join-form glass" aria-labelledby="applicationHeading">
+                <h2 id="applicationHeading">Apply to Join</h2>
+
+                <form method="get" action="thankyou.html" class="application-form">
+                    <label>
+                        <span>First Name *</span>
+                        <input type="text" name="first" required autocomplete="given-name" title="Enter your first name">
+                    </label>
+
+                    <label>
+                        <span>Last Name *</span>
+                        <input type="text" name="last" required autocomplete="family-name" title="Enter your last name">
+                    </label>
+
+                    <label>
+                        <span>Organizational Title</span>
+                        <input type="text" name="orgTitle" autocomplete="organization-title"
+                            pattern="[A-Za-z\s\-]{7,}"
+                            title="Minimum 7 characters. Letters, spaces, and hyphens only.">
+                    </label>
+
+                    <label>
+                        <span>Email *</span>
+                        <input type="email" name="email" required autocomplete="email" placeholder="name@example.com"
+                            title="Enter a valid email address">
+                    </label>
+
+                    <label>
+                        <span>Mobile Phone *</span>
+                        <input type="tel" name="phone" required autocomplete="tel"
+                            title="Enter your mobile phone number">
+                    </label>
+
+                    <label>
+                        <span>Business / Organization Name *</span>
+                        <input type="text" name="business" required autocomplete="organization"
+                            title="Enter your business or organization name">
+                    </label>
+
+                    <label>
+                        <span>Membership Level *</span>
+                        <select name="membership" required title="Select a membership level">
+                            <option value="" selected disabled>Select a level…</option>
+                            <option value="np">NP Membership (No fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        <span>Business / Organization Description</span>
+                        <textarea name="description" title="Describe your business or organization"
+                            rows="5"></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <input type="submit" value="Submit Application">
+                </form>
+            </section>
+
+            <aside class="membership-cards" aria-labelledby="levelsHeading">
+                <h2 id="levelsHeading">Membership Levels</h2>
+
+                <section class="level-card glass" data-level="np">
+                    <h3>NP Membership</h3>
+                    <p>No fee for qualifying non-profit organizations.</p>
+                    <a href="#" class="level-more" data-modal="npModal">See benefits</a>
+                </section>
+
+                <section class="level-card glass" data-level="bronze">
+                    <h3>Bronze Membership</h3>
+                    <p>Entry-level benefits to start networking and visibility.</p>
+                    <a href="#" class="level-more" data-modal="bronzeModal">See benefits</a>
+                </section>
+
+                <section class="level-card glass" data-level="silver">
+                    <h3>Silver Membership</h3>
+                    <p>More promotion plus discounts on events and training.</p>
+                    <a href="#" class="level-more" data-modal="silverModal">See benefits</a>
+                </section>
+
+                <section class="level-card glass" data-level="gold">
+                    <h3>Gold Membership</h3>
+                    <p>Maximum visibility, premium perks, and priority support.</p>
+                    <a href="#" class="level-more" data-modal="goldModal">See benefits</a>
+                </section>
+            </aside>
+        </div>
+
+        <!-- Modals -->
+        <dialog id="npModal" class="membership-modal" aria-labelledby="npTitle">
+            <div class="modal-inner">
+                <h2 id="npTitle">NP Membership Benefits</h2>
+                <ul>
+                    <li>Chamber directory listing</li>
+                    <li>Monthly newsletter inclusion</li>
+                    <li>Invitation to community networking events</li>
+                    <li>Access to member-only resources</li>
+                </ul>
+                <button class="modal-close" type="button">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="bronzeModal" class="membership-modal" aria-labelledby="bronzeTitle">
+            <div class="modal-inner">
+                <h2 id="bronzeTitle">Bronze Membership Benefits</h2>
+                <ul>
+                    <li>All NP benefits</li>
+                    <li>Business spotlight eligibility (limited)</li>
+                    <li>Member badge for your website</li>
+                    <li>Discounted admission to select events</li>
+                </ul>
+                <button class="modal-close" type="button">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="silverModal" class="membership-modal" aria-labelledby="silverTitle">
+            <div class="modal-inner">
+                <h2 id="silverTitle">Silver Membership Benefits</h2>
+                <ul>
+                    <li>All Bronze benefits</li>
+                    <li>Higher-priority spotlight placement</li>
+                    <li>Training and workshop discounts</li>
+                    <li>Featured social media mention (quarterly)</li>
+                </ul>
+                <button class="modal-close" type="button">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="goldModal" class="membership-modal" aria-labelledby="goldTitle">
+            <div class="modal-inner">
+                <h2 id="goldTitle">Gold Membership Benefits</h2>
+                <ul>
+                    <li>All Silver benefits</li>
+                    <li>Homepage “Spotlight” priority</li>
+                    <li>Premium event discounts</li>
+                    <li>Dedicated networking concierge support</li>
+                </ul>
+                <button class="modal-close" type="button">Close</button>
+            </div>
+        </dialog>
+    </main>
+
+    <footer class="glass">
+        <p>📍 Lagos Chamber of Commerce</p>
+        <p>👤 Tobiloba Oluwasegun | WDD 231</p>
+        <p>&copy; <span id="year"></span></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
+

@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/theme.css">
 
     <!-- OPEN GRAPH (FIXED) -->
     <meta property="og:title" content="Lagos Chamber Business Directory and Member Network">
@@ -39,12 +40,12 @@
 
     <canvas id="bg"></canvas>
 
-    <header class="header">
+    <header class="header glass">
         <h1>Lagos Chamber</h1>
 
-        <nav>
+        <nav aria-label="Primary">
             <a href="index.html">Home</a>
-            <a class="active" href="directory.html">Directory</a>
+            <a class="active" href="directory.html" aria-current="page">Directory</a>
             <a href="join.html">Join</a>
         </nav>
 
@@ -93,9 +94,8 @@
 
     </main>
 
-    <footer>
-        <p><strong>Lagos Chamber of Commerce</strong></p>
-        <p>📧 info@lagoschamber.org | 📞 +234 70 8464 9324</p>
+    <footer class="glass">
+        <p>📍 Lagos Chamber of Commerce</p>
         <p>👤 Tobiloba Oluwasegun | WDD 231</p>
         <p>&copy; <span id="year"></span></p>
         <p>Last Modified: <span id="lastModified"></span></p>
