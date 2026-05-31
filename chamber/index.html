@@ -11,13 +11,13 @@
         content="Join Lagos Chamber of Commerce to grow your business, connect with leaders, and explore new opportunities in Lagos.">
     <meta name="author" content="Tobiloba Oluwasegun">
 
-    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="images/favicon-small.png" type="image/png">
 
     <!-- SEO / SOCIAL -->
     <meta property="og:title" content="Lagos Chamber of Commerce Home Page">
     <meta property="og:description"
         content="Discover business opportunities, events, and partnerships with the Lagos Chamber of Commerce.">
-    <meta property="og:image" content="https://thetobsdev1.github.io/wdd231/chamber/images/lagoshero.png">
+    <meta property="og:image" content="https://thetobsdev1.github.io/wdd231/chamber/images/lagoshero.jpg">
     <meta property="og:url" content="https://thetobsdev1.github.io/wdd231/chamber/index.html">
     <meta property="og:type" content="website">
 
@@ -31,31 +31,43 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/home.css">
 
+    <script src="scripts/nav.js" defer></script>
     <script src="scripts/home.js" defer></script>
 </head>
 
-<body>
+<body class="home-page">
 
     <header class="header glass">
         <a class="brand" href="index.html">
-            <img class="brand-logo" src="images/favicon.png" alt="Lagos Chamber logo" width="34" height="34"
+            <img class="brand-logo" src="images/favicon-small.png" alt="Lagos Chamber logo" width="34" height="34"
                 loading="eager">
             <span class="brand-name">Lagos Chamber</span>
         </a>
 
-        <nav aria-label="Primary">
-            <a href="index.html" class="active" aria-current="page">Home</a>
-            <a href="directory.html">Directory</a>
-            <a href="join.html">Join</a>
-        </nav>
+        <div class="header-nav">
+            <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav"
+                aria-label="Open navigation menu">☰</button>
+            <nav id="primary-nav" aria-label="Primary">
+                <a href="index.html" class="active" aria-current="page">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+            </nav>
+        </div>
     </header>
+
+    <nav class="wayfinding" aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+            <li><span aria-current="page">Home</span></li>
+        </ol>
+    </nav>
 
     <main>
 
         <!-- HERO -->
         <section class="hero">
-            <img src="images/lagoshero.png" alt="Lagos skyline view">
+            <img src="images/lagoshero.jpg" alt="Lagos skyline view" width="1200" height="675" fetchpriority="high">
 
             <div class="overlay"></div>
 

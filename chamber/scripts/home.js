@@ -7,7 +7,12 @@ async function getWeather() {
         const data = await res.json();
 
         document.getElementById("temp").textContent = `${Math.round(data.main.temp)}°C`;
-        document.getElementById("desc").textContent = capitalize(data.weather[0].description);
+
+        const icon = data.weather[0].icon;
+        document.getElementById("desc").innerHTML = `
+            <img src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="" width="50" height="50">
+            ${capitalize(data.weather[0].description)}
+        `;
 
     } catch (error) {
         console.error("Weather error:", error);
@@ -68,7 +73,7 @@ function spotlight() {
                 div.className = "card glass";
 
                 div.innerHTML = `
-                    <img src="images/${m.image}" alt="${m.name}">
+                    <img src="images/${m.image}" alt="${m.name}" loading="lazy" width="400" height="140">
                     <h3>${m.name}</h3>
                     <p>${m.address}</p>
                     <p>${m.phone}</p>

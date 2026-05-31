@@ -218,13 +218,7 @@ body {
     transform: scale(1.1);
 }
 
-/* ===== GRID ===== */
-.home-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-}
+/* ===== GRID (home layout in styles/home.css) ===== */
 
 /* ===== CARDS ===== */
 .card {
@@ -235,12 +229,7 @@ body {
     transform: translateY(-5px);
 }
 
-/* ===== SPOTLIGHT ===== */
-.spotlight-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
+/* ===== SPOTLIGHT (home layout in styles/home.css) ===== */
 
 .spotlight-grid .card img {
     width: 100%;
