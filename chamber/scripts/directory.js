@@ -123,11 +123,6 @@ document.querySelectorAll(".chip").forEach(btn => {
 document.getElementById("gridBtn").onclick = () => cards.className = "grid";
 document.getElementById("listBtn").onclick = () => cards.className = "list";
 
-/* ================= DARK MODE ================= */
-document.getElementById("darkModeToggle").onclick = () => {
-    document.body.classList.toggle("dark");
-};
-
 /* ================= FOOTER ================= */
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;

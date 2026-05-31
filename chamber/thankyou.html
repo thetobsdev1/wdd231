@@ -24,22 +24,33 @@
     <link rel="stylesheet" href="styles/theme.css">
     <link rel="stylesheet" href="styles/join.css">
 
+    <script src="scripts/theme-toggle.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
     <script src="scripts/thankyou.js" defer></script>
 </head>
 
 <body>
     <header class="header glass">
         <a class="brand" href="index.html">
-            <img class="brand-logo" src="images/favicon.png" alt="Lagos Chamber logo" width="34" height="34"
+            <img class="brand-logo" src="images/favicon-small.png" alt="Lagos Chamber logo" width="34" height="34"
                 loading="eager">
             <span class="brand-name">Lagos Chamber</span>
         </a>
 
-        <nav aria-label="Primary">
-            <a href="index.html">Home</a>
-            <a href="directory.html">Directory</a>
-            <a href="join.html">Join</a>
-        </nav>
+        <div class="header-nav">
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to light mode"
+                title="Light mode">
+                <span class="theme-icon theme-icon-light" aria-hidden="true">☀️</span>
+                <span class="theme-icon theme-icon-dark" aria-hidden="true">🌙</span>
+            </button>
+            <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav"
+                aria-label="Open navigation menu">☰</button>
+            <nav id="primary-nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+            </nav>
+        </div>
     </header>
 
     <main class="join-main">
