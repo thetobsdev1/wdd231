@@ -5,40 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Lagos Chamber Home</title>
+    <title>Discover Lagos | Lagos Chamber</title>
 
     <meta name="description"
-        content="Join Lagos Chamber of Commerce to grow your business, connect with leaders, and explore new opportunities in Lagos.">
+        content="Discover Lagos attractions, landmarks, and cultural highlights. Explore demographics, destinations, and features that make Lagos a vibrant business hub.">
     <meta name="author" content="Tobiloba Oluwasegun">
 
     <link rel="icon" href="images/favicon-small.png" type="image/png">
 
-    <!-- SEO / SOCIAL -->
-    <meta property="og:title" content="Lagos Chamber of Commerce Home Page">
+    <meta property="og:title" content="Discover Lagos | Lagos Chamber of Commerce">
     <meta property="og:description"
-        content="Discover business opportunities, events, and partnerships with the Lagos Chamber of Commerce.">
+        content="Explore eight featured destinations and learn why Lagos is one of Africa's most dynamic cities for business and tourism.">
     <meta property="og:image" content="https://thetobsdev1.github.io/wdd231/chamber/images/lagoshero.jpg">
-    <meta property="og:url" content="https://thetobsdev1.github.io/wdd231/chamber/index.html">
+    <meta property="og:url" content="https://thetobsdev1.github.io/wdd231/chamber/discover.html">
     <meta property="og:type" content="website">
 
-    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/theme.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/medium.css">
 
     <script src="scripts/theme-toggle.js" defer></script>
     <script src="scripts/nav.js" defer></script>
-    <script src="scripts/home.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
 </head>
 
-<body class="home-page">
+<body class="discover-page">
 
     <header class="header glass">
         <a class="brand" href="index.html">
@@ -56,9 +54,9 @@
             <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav"
                 aria-label="Open navigation menu">☰</button>
             <nav id="primary-nav" aria-label="Primary">
-                <a href="index.html" class="active" aria-current="page">Home</a>
+                <a href="index.html">Home</a>
                 <a href="directory.html">Directory</a>
-                <a href="discover.html">Discover</a>
+                <a href="discover.html" class="active" aria-current="page">Discover</a>
                 <a href="join.html">Join</a>
             </nav>
         </div>
@@ -66,53 +64,25 @@
 
     <nav class="wayfinding" aria-label="Breadcrumb">
         <ol class="breadcrumb">
-            <li><span aria-current="page">Home</span></li>
+            <li><a href="index.html">Home</a></li>
+            <li><span aria-current="page">Discover</span></li>
         </ol>
     </nav>
 
     <main>
+        <h1>Discover Lagos</h1>
 
-        <!-- HERO -->
-        <section class="hero">
-            <img src="images/lagoshero.jpg" alt="Lagos skyline view" width="1200" height="675" fetchpriority="high">
-
-            <div class="overlay"></div>
-
-            <div class="hero-content">
-                <h1>Empowering Business Growth in Lagos</h1>
-                <p>Connect with leaders. Grow your brand. Expand your reach.</p>
-                <a href="join.html" class="cta">Join the Chamber</a>
-            </div>
+        <section class="intro glass">
+            <p>
+                Lagos is Nigeria's largest city and a major West African economic hub with more than 15 million
+                residents. From historic markets and museums to beaches and modern infrastructure, these highlights
+                show why visitors and chamber members choose Lagos.
+            </p>
         </section>
 
-        <!-- MAIN GRID -->
-        <section class="home-grid">
-
-            <!-- EVENTS -->
-            <section class="card glass">
-                <h2>📅 Upcoming Events</h2>
-                <ul>
-                    <li>📅 Business Networking Meetup – June 5</li>
-                    <li>📅 Startup Pitch Day – June 12</li>
-                    <li>📅 Lagos Trade Expo – June 20</li>
-                </ul>
-            </section>
-
-            <section class="card glass weather">
-                <h2>🌤 Lagos Weather</h2>
-                <p id="temp">Loading...</p>
-                <p id="desc"></p>
-                <div id="forecast"></div>
-            </section>
-
+        <section class="discover-grid" id="discoverGrid" aria-label="Lagos attractions">
+            <div id="visitMessage" class="visit-message glass" role="status" aria-live="polite"></div>
         </section>
-
-        <!-- SPOTLIGHT -->
-        <section class="spotlight">
-            <h2>Featured Members</h2>
-            <div id="spotlightCards" class="spotlight-grid"></div>
-        </section>
-
     </main>
 
     <footer class="glass">

@@ -1,0 +1,29 @@
+/* Discover page — medium screens (641px to 1024px) */
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "visit visit"
+            "card1 card2"
+            "card3 card3"
+            "card4 card5"
+            "card6 card7"
+            "card8 card8";
+        gap: 1.15rem;
+    }
+
+    .discover-card figure img {
+        max-width: 100%;
+    }
+
+    .discover-card figure img {
+        transition: filter 0.35s ease, transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .discover-card figure img:hover {
+        filter: brightness(1.12) saturate(1.15);
+        transform: scale(1.04);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    }
+}

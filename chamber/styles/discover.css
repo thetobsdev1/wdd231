@@ -1,0 +1,166 @@
+/* Discover page — small screens (320px to 640px) */
+
+.discover-page main {
+    padding-bottom: 2rem;
+}
+
+.discover-page h1 {
+    margin: 0 0 1rem;
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+}
+
+.discover-page .intro {
+    margin-bottom: 1.25rem;
+}
+
+.discover-page .intro p {
+    margin: 0;
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "visit"
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+    gap: 1rem;
+}
+
+.visit-message {
+    grid-area: visit;
+    margin: 0;
+    padding: 1rem 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+    border-left: 4px solid var(--accent2);
+}
+
+.card1 { grid-area: card1; }
+.card2 { grid-area: card2; }
+.card3 { grid-area: card3; }
+.card4 { grid-area: card4; }
+.card5 { grid-area: card5; }
+.card6 { grid-area: card6; }
+.card7 { grid-area: card7; }
+.card8 { grid-area: card8; }
+
+.discover-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+}
+
+.discover-card h2 {
+    margin: 0;
+    font-size: 1.15rem;
+    color: var(--text);
+}
+
+.discover-card figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.discover-card figure img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.discover-card address {
+    font-style: normal;
+    font-size: 0.92rem;
+    color: var(--muted);
+    line-height: 1.45;
+}
+
+.discover-card p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.discover-card .learn-more {
+    align-self: flex-start;
+    padding: 0.55rem 1rem;
+    background: var(--accent2);
+    color: #111;
+    border: none;
+    font-weight: 600;
+    transition: transform 140ms ease, box-shadow 140ms ease;
+}
+
+.discover-card .learn-more:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(244, 163, 0, 0.35);
+}
+
+.wayfinding {
+    max-width: 1100px;
+    margin: 0.75rem auto 0;
+    padding: 0 1rem;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: "›";
+    margin-left: 0.35rem;
+    opacity: 0.7;
+}
+
+.breadcrumb a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Large screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "visit visit card1 card2"
+            "card3 card3 card4 card5"
+            "card6 card7 card8 card8";
+        gap: 1.25rem;
+    }
+
+    .discover-card figure img {
+        max-width: 100%;
+    }
+
+    .discover-card figure img:hover {
+        filter: brightness(1.12) saturate(1.15);
+        transform: scale(1.04);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    }
+
+    .discover-card figure img {
+        transition: filter 0.35s ease, transform 0.35s ease, box-shadow 0.35s ease;
+    }
+}
