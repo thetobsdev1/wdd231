@@ -1,0 +1,249 @@
+/* final/styles/site-plan.css */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #14213d;
+    --accent: #fca311;
+    --background: #f5f7fa;
+    --surface: #ffffff;
+    --text: #222222;
+    --muted: #5a6472;
+    --border: #d8dee9;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+.wire-label {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary);
+}
+
+a {
+    color: var(--accent);
+}
+
+a:hover,
+a:focus-visible {
+    color: var(--primary);
+}
+
+header {
+    background-color: var(--primary);
+    color: var(--surface);
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+header h1,
+header p {
+    color: var(--surface);
+}
+
+header p {
+    max-width: 40rem;
+    margin: 0.5rem auto 0;
+    font-size: 0.95rem;
+    opacity: 0.92;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 3rem;
+}
+
+section {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 2px 8px rgba(20, 33, 61, 0.06);
+}
+
+section h2 {
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 3px solid var(--accent);
+}
+
+section p,
+section li {
+    margin-bottom: 0.75rem;
+}
+
+section ul {
+    padding-left: 1.25rem;
+}
+
+.color-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.color-card {
+    display: grid;
+    grid-template-columns: 4.5rem 1fr;
+    gap: 0.75rem;
+    align-items: center;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 0.4rem;
+    background-color: var(--background);
+}
+
+.swatch {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 0.35rem;
+    border: 1px solid var(--border);
+}
+
+.swatch-primary {
+    background-color: var(--primary);
+}
+
+.swatch-accent {
+    background-color: var(--accent);
+}
+
+.swatch-background {
+    background-color: var(--background);
+}
+
+.swatch-surface {
+    background-color: var(--surface);
+}
+
+.swatch-text {
+    background-color: var(--text);
+}
+
+.font-sample {
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+    border-left: 4px solid var(--accent);
+    background-color: var(--background);
+}
+
+.font-sample-heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.font-sample-body {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+
+.wireframe-group {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.wireframe-panel h3 {
+    margin-bottom: 0.75rem;
+}
+
+.wireframe {
+    border: 2px dashed var(--primary);
+    background-color: var(--background);
+    padding: 0.5rem;
+    border-radius: 0.35rem;
+}
+
+.wireframe-mobile {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.wireframe-desktop {
+    max-width: 100%;
+}
+
+.wire-block {
+    border: 1px solid var(--border);
+    background-color: var(--surface);
+    color: var(--muted);
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0.55rem 0.35rem;
+    margin-bottom: 0.45rem;
+    border-radius: 0.25rem;
+}
+
+.wire-block:last-child {
+    margin-bottom: 0;
+}
+
+.wire-hero {
+    min-height: 4.5rem;
+    background-color: rgba(20, 33, 61, 0.08);
+}
+
+.wire-nav {
+    background-color: var(--primary);
+    color: var(--surface);
+    font-weight: 600;
+}
+
+.wire-accent {
+    background-color: rgba(252, 163, 17, 0.18);
+    border-color: var(--accent);
+}
+
+.wire-row {
+    display: grid;
+    gap: 0.45rem;
+}
+
+.wireframe-desktop .wire-row-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.wireframe-desktop .wire-row-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.wire-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--surface);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 640px) {
+    .color-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wireframe-group {
+        grid-template-columns: 1fr 1.4fr;
+        align-items: start;
+    }
+}
