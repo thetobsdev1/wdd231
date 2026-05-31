@@ -21,12 +21,8 @@ body {
     backdrop-filter: blur(10px);
 }
 
-nav {
-    display: flex;
-    gap: 10px;
-}
-
-nav a {
+/* Primary navigation — mobile menu handled in theme.css */
+#primary-nav a {
     color: white;
     text-decoration: none;
 }

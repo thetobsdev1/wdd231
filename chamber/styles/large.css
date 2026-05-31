@@ -18,12 +18,12 @@
         margin: 0;
     }
 
-    nav {
+    #primary-nav {
         justify-content: flex-end;
         gap: 1.5rem;
     }
 
-    nav a {
+    #primary-nav a {
         font-size: 1rem;
         transition: color 0.3s ease;
     }

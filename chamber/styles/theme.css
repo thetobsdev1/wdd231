@@ -139,6 +139,9 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 25;
+    flex-shrink: 0;
     padding: 0.45rem 0.65rem;
     border-radius: 10px;
     border: 1px solid var(--border);
@@ -195,19 +198,24 @@ html[data-theme="light"] .theme-icon-dark {
     gap: 0.5rem;
 }
 
-nav {
+#primary-nav {
     display: none;
     flex-direction: column;
     width: 100%;
+    flex-basis: 100%;
     gap: 0.35rem;
     padding-top: 0.5rem;
 }
 
-nav.is-open {
+#primary-nav.is-open {
     display: flex;
 }
 
-nav a {
+nav.wayfinding {
+    display: block;
+}
+
+#primary-nav a {
     display: inline-flex;
     align-items: center;
     padding: 0.45rem 0.7rem;
@@ -218,13 +226,13 @@ nav a {
     transition: background 140ms ease, border-color 140ms ease, transform 140ms ease;
 }
 
-nav a:hover {
+#primary-nav a:hover {
     background: var(--nav-hover-bg);
     border-color: var(--nav-hover-border);
 }
 
-nav a.active,
-nav a[aria-current="page"] {
+#primary-nav a.active,
+#primary-nav a[aria-current="page"] {
     background: var(--nav-active-bg);
     border-color: var(--nav-active-border);
     color: var(--text);
@@ -329,15 +337,16 @@ footer p {
         justify-content: flex-end;
     }
 
-    nav {
+    #primary-nav {
         display: flex;
         flex-direction: row;
         width: auto;
+        flex-basis: auto;
         padding-top: 0;
         gap: 0.75rem;
     }
 
-    nav.is-open {
+    #primary-nav.is-open {
         display: flex;
     }
 
