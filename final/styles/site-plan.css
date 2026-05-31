@@ -162,6 +162,10 @@ section ul {
     margin-bottom: 0.75rem;
 }
 
+figure.wireframe {
+    margin: 0;
+}
+
 .wireframe {
     border: 2px dashed var(--primary);
     background-color: var(--background);
