@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributions | TheTobsDev Portfolio</title>
+    <meta name="description" content="Image, font, and content attributions for TheTobsDev portfolio by Tobiloba Oluwasegun.">
+    <meta name="author" content="Tobiloba Oluwasegun">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module">
+        import { initTheme, initNav, initFooter } from "./scripts/app.js";
+        initTheme();
+        initNav();
+        initFooter();
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a class="brand" href="index.html">
+            <img src="images/favicon.svg" alt="TheTobsDev logo" width="36" height="36">
+            <span class="brand-name">TheTobsDev</span>
+        </a>
+        <div class="header-actions">
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode">🌙</button>
+            <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">☰</button>
+        </div>
+        <nav id="primary-nav" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <nav class="wayfinding" aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><span aria-current="page">Attributions</span></li>
+        </ol>
+    </nav>
+
+    <main>
+        <h1>Resource Attributions</h1>
+        <p>Credits for fonts, images, and content used in TheTobsDev.</p>
+
+        <section class="card" aria-labelledby="fontsHeading">
+            <h2 id="fontsHeading">Fonts</h2>
+            <ul>
+                <li>Inter and Poppins — <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">Google Fonts</a></li>
+            </ul>
+        </section>
+
+        <section class="card" aria-labelledby="imagesHeading">
+            <h2 id="imagesHeading">Images</h2>
+            <ul>
+                <li>Project thumbnail images — generated placeholders for portfolio demonstration (TheTobsDev, 2026)</li>
+                <li>Favicon logo — original SVG created for TheTobsDev branding</li>
+            </ul>
+        </section>
+
+        <section class="card" aria-labelledby="contentHeading">
+            <h2 id="contentHeading">Content References</h2>
+            <ul>
+                <li>Project descriptions reference original work completed for WDD 231 coursework</li>
+                <li>Lagos Chamber of Commerce project content — original student development work</li>
+            </ul>
+        </section>
+
+        <section class="card" aria-labelledby="linksHeading">
+            <h2 id="linksHeading">External Links</h2>
+            <ul>
+                <li>GitHub repository — <a href="https://github.com/thetobsdev1/wdd231" target="_blank" rel="noopener noreferrer">thetobsdev1/wdd231</a></li>
+                <li>Deployed portfolio — <a href="https://thetobsdev1.github.io/wdd231/final/index.html">GitHub Pages</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>📍 Lagos, Nigeria</p>
+        <p>👤 Tobiloba Oluwasegun | WDD 231 Final Project</p>
+        <p><a href="attributions.html">Attributions</a> | <a href="site-plan.html">Site Plan</a></p>
+        <p><a href="https://youtu.be/REPLACE_WITH_YOUR_VIDEO_ID" target="_blank" rel="noopener noreferrer">Project Demonstration Video</a></p>
+        <p>&copy; <span id="year"></span></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

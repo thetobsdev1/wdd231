@@ -1,0 +1,5 @@
+/* final/styles/normalize.css - minimal reset */
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; }
+img { max-width: 100%; height: auto; display: block; }
+button, input, select, textarea { font: inherit; }

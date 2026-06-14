@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | TheTobsDev Portfolio</title>
+    <meta name="description" content="Thank you for contacting Tobiloba Oluwasegun through TheTobsDev portfolio.">
+    <meta name="author" content="Tobiloba Oluwasegun">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/thankyou.js" type="module"></script>
+</head>
+<body>
+    <header class="header">
+        <a class="brand" href="index.html">
+            <img src="images/favicon.svg" alt="TheTobsDev logo" width="36" height="36">
+            <span class="brand-name">TheTobsDev</span>
+        </a>
+        <div class="header-actions">
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode">🌙</button>
+            <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">☰</button>
+        </div>
+        <nav id="primary-nav" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <nav class="wayfinding" aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><span aria-current="page">Thank You</span></li>
+        </ol>
+    </nav>
+
+    <main>
+        <h1>Thank You</h1>
+        <section class="card" aria-labelledby="thanksHeading">
+            <h2 id="thanksHeading">Your message was received.</h2>
+            <p>Here is a summary of the information you submitted:</p>
+            <dl class="submitted-grid" aria-live="polite">
+                <div><dt>First Name</dt><dd id="outFirst">—</dd></div>
+                <div><dt>Last Name</dt><dd id="outLast">—</dd></div>
+                <div><dt>Email</dt><dd id="outEmail">—</dd></div>
+                <div><dt>Phone</dt><dd id="outPhone">—</dd></div>
+                <div><dt>Subject</dt><dd id="outSubject">—</dd></div>
+                <div><dt>Submitted On</dt><dd id="outTimestamp">—</dd></div>
+                <div class="full"><dt>Message</dt><dd id="outMessage">—</dd></div>
+            </dl>
+            <p><a class="btn" href="contact.html">Back to Contact</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>📍 Lagos, Nigeria</p>
+        <p>👤 Tobiloba Oluwasegun | WDD 231 Final Project</p>
+        <p><a href="attributions.html">Attributions</a> | <a href="site-plan.html">Site Plan</a></p>
+        <p><a href="https://youtu.be/REPLACE_WITH_YOUR_VIDEO_ID" target="_blank" rel="noopener noreferrer">Project Demonstration Video</a></p>
+        <p>&copy; <span id="year"></span></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

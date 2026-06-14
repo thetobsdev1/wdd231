@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Lagos Chamber of Commerce",
+    "description": "A responsive chamber website with directory filtering, join form, discover page, and dynamic member spotlight.",
+    "technologies": "HTML, CSS, JavaScript, JSON",
+    "year": 2026,
+    "category": "Course Project",
+    "image": "project-chamber.webp",
+    "url": "https://thetobsdev1.github.io/wdd231/chamber/index.html"
+  },
+  {
+    "id": 2,
+    "name": "WDD231 Course Home",
+    "description": "Course landing page with dynamic course filtering, credit totals, and responsive navigation.",
+    "technologies": "HTML, CSS, JavaScript",
+    "year": 2026,
+    "category": "Course Project",
+    "image": "project-course.webp",
+    "url": "https://thetobsdev1.github.io/wdd231/index.html"
+  },
+  {
+    "id": 3,
+    "name": "Chamber Business Directory",
+    "description": "Searchable member directory with grid and list views, membership badges, and animated statistics.",
+    "technologies": "HTML, CSS, JavaScript, Fetch API",
+    "year": 2026,
+    "category": "Course Project",
+    "image": "project-directory.webp",
+    "url": "https://thetobsdev1.github.io/wdd231/chamber/directory.html"
+  },
+  {
+    "id": 4,
+    "name": "Discover Lagos Page",
+    "description": "Area promotion page using CSS grid-template-areas, localStorage visit tracking, and dynamic attraction cards.",
+    "technologies": "HTML, CSS, ES Modules",
+    "year": 2026,
+    "category": "Course Project",
+    "image": "project-discover.webp",
+    "url": "https://thetobsdev1.github.io/wdd231/chamber/discover.html"
+  },
+  {
+    "id": 5,
+    "name": "TheTobsDev Portfolio",
+    "description": "Final individual portfolio showcasing projects, skills, and contact form with modal project details.",
+    "technologies": "HTML, CSS, JavaScript, JSON",
+    "year": 2026,
+    "category": "Portfolio",
+    "image": "project-portfolio.webp",
+    "url": "https://thetobsdev1.github.io/wdd231/final/index.html"
+  },
+  {
+    "id": 6,
+    "name": "Responsive Navigation Component",
+    "description": "Reusable mobile hamburger navigation with ARIA attributes and keyboard-friendly menu behavior.",
+    "technologies": "HTML, CSS, JavaScript",
+    "year": 2025,
+    "category": "Component",
+    "image": "project-nav.webp",
+    "url": "https://github.com/thetobsdev1/wdd231"
+  },
+  {
+    "id": 7,
+    "name": "Theme Toggle System",
+    "description": "Light and dark mode switcher using CSS custom properties and localStorage persistence.",
+    "technologies": "CSS Variables, JavaScript, localStorage",
+    "year": 2025,
+    "category": "Component",
+    "image": "project-theme.webp",
+    "url": "https://github.com/thetobsdev1/wdd231"
+  },
+  {
+    "id": 8,
+    "name": "Weather Dashboard Widget",
+    "description": "OpenWeather API integration displaying current conditions and a three-day forecast for Lagos.",
+    "technologies": "JavaScript, Fetch API, OpenWeather",
+    "year": 2025,
+    "category": "API Integration",
+    "image": "project-weather.webp",
+    "url": "https://thetobsdev1.github.io/wdd231/chamber/index.html"
+  },
+  {
+    "id": 9,
+    "name": "Membership Application Form",
+    "description": "Accessible join form with validation, fieldsets, and thank-you page displaying submitted data.",
+    "technologies": "HTML, CSS, JavaScript",
+    "year": 2025,
+    "category": "Course Project",
+    "image": "project-form.webp",
+    "url": "https://thetobsdev1.github.io/wdd231/chamber/join.html"
+  },
+  {
+    "id": 10,
+    "name": "JSON Member Spotlight",
+    "description": "Randomized featured members loaded from JSON with lazy-loaded images and semantic card markup.",
+    "technologies": "JavaScript, JSON, DOM",
+    "year": 2025,
+    "category": "Data Driven",
+    "image": "project-spotlight.webp",
+    "url": "https://thetobsdev1.github.io/wdd231/chamber/index.html"
+  },
+  {
+    "id": 11,
+    "name": "Course Credit Calculator",
+    "description": "Filters WDD and CSE courses dynamically and calculates total credits using array methods.",
+    "technologies": "JavaScript, Arrays, DOM",
+    "year": 2025,
+    "category": "Data Driven",
+    "image": "project-credits.webp",
+    "url": "https://thetobsdev1.github.io/wdd231/index.html"
+  },
+  {
+    "id": 12,
+    "name": "Accessible Modal Dialog",
+    "description": "Focus-trapped modal for project details with escape key support and ARIA dialog roles.",
+    "technologies": "JavaScript, ARIA, CSS",
+    "year": 2026,
+    "category": "Component",
+    "image": "project-modal.webp",
+    "url": "https://thetobsdev1.github.io/wdd231/final/projects.html"
+  },
+  {
+    "id": 13,
+    "name": "CSS Grid Layout Lab",
+    "description": "Responsive grid-template-areas layouts for small, medium, and large breakpoints without frameworks.",
+    "technologies": "CSS Grid, Media Queries",
+    "year": 2025,
+    "category": "Layout",
+    "image": "project-grid.webp",
+    "url": "https://thetobsdev1.github.io/wdd231/chamber/discover.html"
+  },
+  {
+    "id": 14,
+    "name": "Glassmorphism UI Kit",
+    "description": "Consistent glass-style cards, headers, and surfaces using backdrop-filter and design tokens.",
+    "technologies": "CSS, Design Systems",
+    "year": 2025,
+    "category": "Design",
+    "image": "project-glass.webp",
+    "url": "https://thetobsdev1.github.io/wdd231/chamber/index.html"
+  },
+  {
+    "id": 15,
+    "name": "Lazy Load Image Gallery",
+    "description": "Project gallery with intrinsic aspect ratios, loading lazy attributes, and hover effects on desktop.",
+    "technologies": "HTML, CSS, Performance",
+    "year": 2026,
+    "category": "Performance",
+    "image": "project-gallery.webp",
+    "url": "https://thetobsdev1.github.io/wdd231/final/projects.html"
+  },
+  {
+    "id": 16,
+    "name": "SEO Metadata Template",
+    "description": "Reusable page head pattern with title, description, author, and Open Graph social tags.",
+    "technologies": "HTML, SEO",
+    "year": 2025,
+    "category": "Best Practices",
+    "image": "project-seo.webp",
+    "url": "https://thetobsdev1.github.io/wdd231/final/index.html"
+  },
+  {
+    "id": 17,
+    "name": "Breadcrumb Wayfinding",
+    "description": "Accessible breadcrumb navigation reinforcing site hierarchy on inner pages.",
+    "technologies": "HTML, ARIA",
+    "year": 2025,
+    "category": "Accessibility",
+    "image": "project-breadcrumb.webp",
+    "url": "https://thetobsdev1.github.io/wdd231/chamber/discover.html"
+  },
+  {
+    "id": 18,
+    "name": "Site Plan Document",
+    "description": "Planning document defining site purpose, color scheme, typography, and responsive wireframes.",
+    "technologies": "HTML, CSS",
+    "year": 2026,
+    "category": "Planning",
+    "image": "project-plan.webp",
+    "url": "https://thetobsdev1.github.io/wdd231/final/site-plan.html"
+  }
+]

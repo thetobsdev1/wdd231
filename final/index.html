@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheTobsDev | Frontend Developer Portfolio</title>
+    <meta name="description" content="TheTobsDev portfolio by Tobiloba Oluwasegun. Explore web development projects, skills, and contact information.">
+    <meta name="author" content="Tobiloba Oluwasegun">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <meta property="og:title" content="TheTobsDev | Frontend Developer Portfolio">
+    <meta property="og:description" content="Portfolio showcasing responsive web projects built with HTML, CSS, and JavaScript.">
+    <meta property="og:image" content="https://thetobsdev1.github.io/wdd231/final/images/project-portfolio.webp">
+    <meta property="og:url" content="https://thetobsdev1.github.io/wdd231/final/index.html">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/home.js" type="module"></script>
+</head>
+<body>
+    <header class="header">
+        <a class="brand" href="index.html">
+            <img src="images/favicon.svg" alt="TheTobsDev logo" width="36" height="36">
+            <span class="brand-name">TheTobsDev</span>
+        </a>
+        <div class="header-actions">
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode">🌙</button>
+            <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">☰</button>
+        </div>
+        <nav id="primary-nav" aria-label="Primary">
+            <a href="index.html" class="active" aria-current="page">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Building Accessible, Responsive Web Experiences</h1>
+            <p>
+                I am Tobiloba Oluwasegun, a frontend developer focused on semantic HTML, modern CSS,
+                and JavaScript that delivers fast, usable interfaces for real-world projects.
+            </p>
+            <a class="btn" href="projects.html">View Projects</a>
+            <a class="btn btn-secondary" href="contact.html">Contact Me</a>
+        </section>
+
+        <section class="card" aria-labelledby="aboutHeading">
+            <h2 id="aboutHeading">About Me</h2>
+            <p>
+                I am studying Web Frontend Development at BYU-Idaho and building projects that demonstrate
+                responsive design, accessibility, API integration, and dynamic content with vanilla JavaScript.
+            </p>
+            <p>
+                My goal is to create polished websites that are easy to navigate, perform well on mobile devices,
+                and meet professional development standards.
+            </p>
+            <p id="projectStats" aria-live="polite"></p>
+        </section>
+
+        <section aria-labelledby="featuredHeading">
+            <h2 id="featuredHeading">Featured Projects</h2>
+            <div id="featuredProjects" class="project-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>📍 Lagos, Nigeria</p>
+        <p>👤 Tobiloba Oluwasegun | WDD 231 Final Project</p>
+        <p><a href="attributions.html">Attributions</a> | <a href="site-plan.html">Site Plan</a></p>
+        <p><a href="https://youtu.be/REPLACE_WITH_YOUR_VIDEO_ID" target="_blank" rel="noopener noreferrer">Project Demonstration Video</a></p>
+        <p>&copy; <span id="year"></span></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

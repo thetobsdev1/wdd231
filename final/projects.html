@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | TheTobsDev Portfolio</title>
+    <meta name="description" content="Browse 18 web development projects by Tobiloba Oluwasegun with technologies, categories, and detailed modal views.">
+    <meta name="author" content="Tobiloba Oluwasegun">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <meta property="og:title" content="Projects | TheTobsDev Portfolio">
+    <meta property="og:description" content="Dynamic project gallery with filtering, modal details, and JSON data integration.">
+    <meta property="og:image" content="https://thetobsdev1.github.io/wdd231/final/images/project-gallery.webp">
+    <meta property="og:url" content="https://thetobsdev1.github.io/wdd231/final/projects.html">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/projects.js" type="module"></script>
+</head>
+<body>
+    <header class="header">
+        <a class="brand" href="index.html">
+            <img src="images/favicon.svg" alt="TheTobsDev logo" width="36" height="36">
+            <span class="brand-name">TheTobsDev</span>
+        </a>
+        <div class="header-actions">
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode">🌙</button>
+            <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">☰</button>
+        </div>
+        <nav id="primary-nav" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="projects.html" class="active" aria-current="page">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <nav class="wayfinding" aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><span aria-current="page">Projects</span></li>
+        </ol>
+    </nav>
+
+    <main>
+        <h1>Project Gallery</h1>
+        <p>Explore projects loaded dynamically from JSON. Filter by category — your selection is saved with localStorage.</p>
+
+        <div id="categoryFilters" class="filter-bar" role="group" aria-label="Filter projects by category"></div>
+        <p id="projectCount" aria-live="polite"></p>
+
+        <section id="projectGrid" class="project-grid" aria-label="Project cards"></section>
+    </main>
+
+    <div id="projectModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal">
+            <button type="button" class="modal-close" id="modalClose" aria-label="Close dialog">×</button>
+            <h2 id="modalTitle"></h2>
+            <img id="modalImage" src="images/favicon.svg" alt="" width="480" height="270" hidden>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>📍 Lagos, Nigeria</p>
+        <p>👤 Tobiloba Oluwasegun | WDD 231 Final Project</p>
+        <p><a href="attributions.html">Attributions</a> | <a href="site-plan.html">Site Plan</a></p>
+        <p><a href="https://youtu.be/REPLACE_WITH_YOUR_VIDEO_ID" target="_blank" rel="noopener noreferrer">Project Demonstration Video</a></p>
+        <p>&copy; <span id="year"></span></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

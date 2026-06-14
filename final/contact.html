@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | TheTobsDev Portfolio</title>
+    <meta name="description" content="Contact Tobiloba Oluwasegun for collaboration, internships, or freelance web development opportunities.">
+    <meta name="author" content="Tobiloba Oluwasegun">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <meta property="og:title" content="Contact | TheTobsDev Portfolio">
+    <meta property="og:description" content="Send a message to Tobiloba Oluwasegun through the portfolio contact form.">
+    <meta property="og:image" content="https://thetobsdev1.github.io/wdd231/final/images/project-form.webp">
+    <meta property="og:url" content="https://thetobsdev1.github.io/wdd231/final/contact.html">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module">
+        import { initTheme, initNav, initFooter } from "./scripts/app.js";
+        initTheme();
+        initNav();
+        initFooter();
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a class="brand" href="index.html">
+            <img src="images/favicon.svg" alt="TheTobsDev logo" width="36" height="36">
+            <span class="brand-name">TheTobsDev</span>
+        </a>
+        <div class="header-actions">
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode">🌙</button>
+            <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">☰</button>
+        </div>
+        <nav id="primary-nav" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" class="active" aria-current="page">Contact</a>
+        </nav>
+    </header>
+
+    <nav class="wayfinding" aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><span aria-current="page">Contact</span></li>
+        </ol>
+    </nav>
+
+    <main>
+        <h1>Contact Me</h1>
+        <p>Have a question about my work or want to collaborate? Fill out the form below.</p>
+
+        <section class="card">
+            <form method="get" action="thankyou.html" class="form-grid">
+                <label>
+                    First Name *
+                    <input type="text" name="first" required autocomplete="given-name" title="Enter your first name">
+                </label>
+                <label>
+                    Last Name *
+                    <input type="text" name="last" required autocomplete="family-name" title="Enter your last name">
+                </label>
+                <label>
+                    Email *
+                    <input type="email" name="email" required autocomplete="email" title="Enter your email address">
+                </label>
+                <label>
+                    Phone
+                    <input type="tel" name="phone" autocomplete="tel" pattern="[0-9+\-\s()]{7,}" title="Enter a valid phone number">
+                </label>
+                <label class="full">
+                    Subject *
+                    <select name="subject" required title="Select a subject">
+                        <option value="">Choose a subject</option>
+                        <option value="Collaboration">Collaboration</option>
+                        <option value="Internship">Internship</option>
+                        <option value="Freelance">Freelance Work</option>
+                        <option value="General Inquiry">General Inquiry</option>
+                    </select>
+                </label>
+                <label class="full">
+                    Message *
+                    <textarea name="message" rows="5" required title="Enter your message"></textarea>
+                </label>
+                <div class="full">
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>📍 Lagos, Nigeria</p>
+        <p>👤 Tobiloba Oluwasegun | WDD 231 Final Project</p>
+        <p><a href="attributions.html">Attributions</a> | <a href="site-plan.html">Site Plan</a></p>
+        <p><a href="https://youtu.be/REPLACE_WITH_YOUR_VIDEO_ID" target="_blank" rel="noopener noreferrer">Project Demonstration Video</a></p>
+        <p>&copy; <span id="year"></span></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
